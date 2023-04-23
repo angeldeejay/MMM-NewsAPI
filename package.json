@@ -1,27 +1,32 @@
 {
   "name": "mmm-newsapi",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "News from NewsApi.org",
   "main": "MMM-NewsAPI.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write .",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mumblebaj/MMM-NewsAPI.git"
+    "url": "git+https://github.com/angeldeejay/MMM-NewsAPI.git"
   },
   "keywords": [
     "news"
   ],
-  "author": "Mumblebaj",
+  "author": "angeldeejay",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mumblebaj/MMM-NewsAPI/issues"
+    "url": "https://github.com/angeldeejay/MMM-NewsAPI/issues"
   },
-  "homepage": "https://github.com/mumblebaj/MMM-NewsAPI#readme",
+  "homepage": "https://github.com/angeldeejay/MMM-NewsAPI#readme",
   "dependencies": {
-    "luxon": "^2.0.2",
-    "node-fetch": "^2.6.1",
+    "moment": "^2.29.4",
+    "newsapi": "^2.4.1",
     "qrious": "^4.0.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7"
   }
 }
